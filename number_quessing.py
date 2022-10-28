@@ -15,16 +15,17 @@ else:
 random_number = random.randint(1, top_of_range)
 
 while True:
-    user_quess = input("make a quess: ")
+    user_quess = input("Make a quess: ")
     if user_quess.isdigit():
        user_quess = int(user_quess)
 
     
     else:
-       print('Please type a number next')  
-    continue
+       print('Please type a number next.')  
+       continue
 
     if user_quess == random_number:
         print("You got it!")
+        break
     else:
         print("You got it wrong!")    
